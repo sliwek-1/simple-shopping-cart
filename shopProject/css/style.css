@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Raleway&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    overflow-x: hidden;
+}
+
+.container{
+    width: 100vw;
+    height: auto;
+}
+
+.header{
+    width: 100vw;
+    height: 20vh;
+    background-color:black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn{
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 300ms ease-in-out;
+    font-size: 1.5rem;
+}
+
+.btn:hover{
+    background-color: #444444;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.show-cart{
+    position: absolute;
+    top: 7%;
+    left: 90%;
+    background-color: black;
+    color: white;
+}
+
+.main-section{
+    width: 100vw;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.main-backgound{
+    width: 100vw;
+    height: 80vh;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    z-index: -1;
+    display: flex;
+    align-items:center;
+    flex-direction: column;
+}
+
+.main-backgound img{
+    width: 100vw;
+    height: 80vh;
+    object-fit: cover;
+}
+
+.main-cover{
+    width: 100vw;
+    height: 80vh;
+    position: absolute;
+    background-color: black;
+    opacity: 0.5;
+	filter: blur(10px);
+}
+
+.head-section{
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color: white;
+}
+
+.center-products{
+    width: 80vw;
+    height: 70vh;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2vw;
+}
+
+.product{
+    width:18vw;
+    height: 45vh;
+    overflow: hidden;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.7);
+}
+
+.img{
+    width: 18vw;
+    height: 33vh;
+}
+
+.img img{
+    object-fit: cover;
+    width: 18vw;
+    height: 32vh;
+}
+
+.info-product{
+    width: 18vw;
+    height: 12vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 7px;
+    background-color: #ddd;
+}
+.add-cart{
+    width: 8vw;
+    padding: 5px;
+    background-color: #00b100;
+    color: white;
+}
+
+.add-cart:hover{
+    background-color: #11c211;
+}
+
+svg{
+    fill: white;
+}
+
+.shop-cart{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 40vw;
+    height: 100vh;
+    background-color: white;
+    z-index: 1;
+    transform: translateX(-40vw);
+    transition: 300ms ease-in-out;
+}
+
+.shop-cart.active{
+    transform: translateX(0);
+}
+
+.hide-cart{
+    position: absolute;
+    top: 5%;
+    left: 85%;
+}
+
+.cart-head{
+    width: 40vw;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.75rem;
+}
+
+.total{
+    position: absolute;
+    top: 90%;
+    left: 0%;
+    width: 40vw;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+}
+
+.cart-items{
+    width: 40vw;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+
+.cart-item{
+    width: 30vw;
+    height: 10vh;
+    display: flex;
+    gap: 3vw;
+	justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+
+.delete-product{
+    background-color: #ff0000;
+    color: white;
+}
+
+.delete-product:hover{
+    background-color: #ff3333;
+}
+
+.info-cart{
+    width: 26vw;
+    height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.quantity{
+    padding: 10px;
+    width: 3vw;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+.img-cart img{
+    width: 50px;
+    height: 50px;
+}
+
+.modal{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    opacity: 0.7;
+    z-index: 1;
+    display: none;
+}
+
+.modal.active{
+    display: block;
+}

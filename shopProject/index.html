@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/index.js" defer></script>
+    <script src="js/show-cart.js" defer></script>
+    <title>Shop project</title>
+</head>
+<body>
+    <main class="container">
+        <header class="header">
+            <div class="logo">
+                <svg version="1.1" x="0px" y="0px" width="250px" height="100px" viewBox="52.5 5.5 497 193" enable-background="new 52.5 5.5 497 193" xml:space="preserve">
+                    <g>
+                        <path d="M159.3,164.7l-25.6,25.6l-25.4-25.6l11.4-11.4V129.9H95.1V153.3l11.4,11.4l-25.6,25.6l-25.4-25.6l11.4-11.4V50.1l42.2-41.8
+                            l38.8,38.8v106.2L159.3,164.7z M119.7,100.5V63.9L95.1,39.3v61.2H119.7z"/>
+                        <path d="M248.097,49.3l-21.4,21l-30.4-31v105l7.4,7.2l23-23.2l20.6,20.2l-42,41.8l-37.2-37V47.1l39.2-39L248.097,49.3z"/>
+                        <path d="M342.696,93.1l-73.8,102.8l25.8-74.4h-25.8l33.6-77.2h31.8l-18,48.8H342.696L342.696,93.1z"/>
+                        <path d="M442.695,156.9l-33,33.398h-37.801l-22.199-22.8l12-11.8V43.1l-12.2-12.2l22.399-22.4h37.801l33,33.4V156.9L442.695,156.9z
+                                M414.495,140.9v-83l-24.601-23.8v130.6L414.495,140.9z"/>
+                        <path d="M542.894,49.3l-21.398,21l-30.4-31v105l7.4,7.2l23-23.2l20.6,20.2l-42,41.8l-37.2-37V47.1l39.2-39L542.894,49.3z"/>
+                    </g>
+                </svg>
+            </div>
+            <button class="btn show-cart"><ion-icon name="cart-outline"></ion-icon></button>
+        </header>
+        <div class="modal"></div>
+        <section class="main-section">
+            <div class="main-backgound">
+                <img src="acdc-photo.jpg" alt="">
+                <div class="main-cover"></div>
+            </div>
+            <header class="head-section">
+                <h2>Merch</h2>
+            </header>
+            <article class="center-products">
+                
+            </article>
+        </section>
+        <section class="shop-cart">
+            <button class="btn hide-cart"><ion-icon name="close-outline"></ion-icon></button>
+            <div class="cart-head">
+                <h1>Your Cart</h1>
+            </div>
+            <article class="cart-items">
+            </article>
+            <div class="total">
+                Total: <span class="total-price"></span>
+            </div>
+        </section>
+    </main>    
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

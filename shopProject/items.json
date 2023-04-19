@@ -1,0 +1,28 @@
+[
+	{
+		"id": 1,
+		"imgSrc": "images/img1.png",
+		"name": "AC/DC Album Highway to Hell",
+		"price": 2999
+	},
+	{
+		"id": 2,
+		"imgSrc": "images/img2.png",
+		"name": "AC/CD Album Power Up",
+		"price": 5999
+	},
+	{	
+		"id": 3,
+		"imgSrc": "images/img3.png",
+		"name": "AC/CD Album Back In Black",
+		"price": 1999
+	},
+	{
+		"id": 4,
+		"imgSrc": "images/img4.png",
+		"name": "AC/DC Album Razors Edge",
+		"price": 6999
+	}
+]
+
+
